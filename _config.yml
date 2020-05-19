@@ -41,7 +41,7 @@ plugins:
 
 jekyll_rdf:
   #path: "_data/graph.ttl"
-  baseiri: "https://fairvocabularies.github.io/resources/repositories/"
+  baseiri: "https://fairvocabularies.github.io/resources/"
   path: "_data/terminology-repositories.ttl"
   default_template: "default"
   class_template_mappings:
