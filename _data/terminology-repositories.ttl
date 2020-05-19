@@ -1,4 +1,4 @@
-@prefix vocrepos: <https://FAIRvocabularies.github.io/resources/> .
+@prefix vocrepos: <https://fairvocabularies.github.io/resources/repositories/> .
 @prefix dc:       <http://purl.org/dc/elements/1.1/> .
 @prefix dcat:     <http://www.w3.org/ns/dcat#> .
 @prefix odrl:     <https://www.w3.org/TR/odrl-model/> .
