@@ -1,0 +1,14 @@
+---
+layout: default
+rdf_prefix_path: _data/prefixes.sparql
+---
+<div>
+  <h1>List of Repositories</h1><br/>
+  <ul>
+      {% assign repos_query = "SELECT ?repo ?repoTitle WHERE { ?repo rdf:type dcat:Catalog. ?repo dct:title ?repoTitle . }" %}
+      {% assign results = page.rdf | sparql_query: repos_query %}
+      {% for item in results %}
+          <li><a href="{{item.repo | get_rdf | render_path}}">{{ item.repoTitle }} </a></li>
+      {% endfor %}
+  </ul>
+</div>
